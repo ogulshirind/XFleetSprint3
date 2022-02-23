@@ -3,52 +3,52 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-23T10:58:08.253Z",
-        "line": 5,
-        "name": "login as a user",
+        "start_timestamp": "2022-02-23T15:52:48.779Z",
+        "line": 67,
+        "name": "after logging in user sees full name",
         "description": "",
-        "id": "user-should-be-able-to-login;login-as-a-user",
+        "id": "user-should-be-able-to-login;after-logging-in-user-sees-full-name",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2353000,
+              "duration": 2966000,
               "status": "skipped"
             },
-            "line": 6,
+            "line": 68,
             "name": "user is on the login page",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_is_on_the_login_page()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1912000,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "user logs in using \"user1\" and \"UserUser123\"",
-            "match": {},
+            "line": 69,
+            "name": "user logs in as \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 8,
-            "name": "the user should be able to login",
+            "line": 70,
+            "name": "user sees full name",
             "match": {},
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the title contains \"Dashboard\"",
-            "match": {},
-            "keyword": "And "
           }
         ],
         "tags": [

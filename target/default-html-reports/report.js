@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "login as a user",
+  "name": "after logging in user sees full name",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -27,30 +27,24 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user logs in using \"user1\" and \"UserUser123\"",
+  "name": "user logs in as \"driver\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user should be able to login",
+  "name": "user sees full name",
   "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the title contains \"Dashboard\"",
-  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
