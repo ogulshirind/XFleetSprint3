@@ -3,21 +3,24 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-23T00:00:25.484Z",
-        "line": 12,
-        "name": "login as a given user \"user1\"",
+        "start_timestamp": "2022-02-23T10:58:08.253Z",
+        "line": 5,
+        "name": "login as a user",
         "description": "",
-        "id": "user-should-be-able-to-login;login-as-a-given-user-\"\u003cusername\u003e\";;2",
+        "id": "user-should-be-able-to-login;login-as-a-user",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2353000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "user is on the login page",
-            "match": {},
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_is_on_the_login_page()"
+            },
             "keyword": "Given "
           },
           {
@@ -25,125 +28,27 @@
               "status": "undefined"
             },
             "line": 7,
-            "name": "user logs in the following credentials",
+            "name": "user logs in using \"user1\" and \"UserUser123\"",
             "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "user1"
-                ]
-              },
-              {
-                "cells": [
-                  "password",
-                  "UserUser123"
-                ]
-              }
-            ],
             "keyword": "When "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-23T00:00:25.722Z",
-        "line": 13,
-        "name": "login as a given user \"sales_manager90\"",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-as-a-given-user-\"\u003cusername\u003e\";;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "user is on the login page",
-            "match": {},
-            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "user logs in the following credentials",
+            "line": 8,
+            "name": "the user should be able to login",
             "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "sales_manager90"
-                ]
-              },
-              {
-                "cells": [
-                  "password",
-                  "UserUser123"
-                ]
-              }
-            ],
-            "keyword": "When "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-23T00:00:25.798Z",
-        "line": 14,
-        "name": "login as a given user \"store_manager101\"",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-as-a-given-user-\"\u003cusername\u003e\";;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "user is on the login page",
-            "match": {},
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "user logs in the following credentials",
+            "line": 9,
+            "name": "the title contains \"Dashboard\"",
             "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "store_manager101"
-                ]
-              },
-              {
-                "cells": [
-                  "password",
-                  "UserUser123"
-                ]
-              }
-            ],
-            "keyword": "When "
+            "keyword": "And "
           }
         ],
         "tags": [

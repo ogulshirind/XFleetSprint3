@@ -12,17 +12,21 @@ public class LoginPage {
     }
 
     @FindBy(id = "prependedInput")
-    public WebElement usernameInputBox;
+    public WebElement usernameInput;
 
     @FindBy(id = "prependedInput2")
-    public WebElement passwordInputBox;
+    public WebElement passwordInput;
 
     @FindBy(className = "custom-checkbox__text")
-    public WebElement checkboxText;
+    public WebElement checkbox;
 
     @FindBy(id = "_submit")
     public WebElement loginButton;
 
-
+    public void login(String username, String password) {
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+        loginButton.click();
+    }
 
 }

@@ -9,73 +9,10 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "login as a given user \"\u003cuserName\u003e\"",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "user logs in the following credentials",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "\u003cuserName\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "password",
-        "\u003cpassword\u003e"
-      ]
-    }
-  ]
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "userName",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "UserUser123"
-      ]
-    },
-    {
-      "cells": [
-        "sales_manager90",
-        "UserUser123"
-      ]
-    },
-    {
-      "cells": [
-        "store_manager101",
-        "UserUser123"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "login as a given user \"user1\"",
+  "name": "login as a user",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@login"
@@ -89,83 +26,31 @@ formatter.step({
   "name": "user is on the login page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_is_on_the_login_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user logs in the following credentials",
-  "rows": [
-    {},
-    {}
-  ],
+  "name": "user logs in using \"user1\" and \"UserUser123\"",
   "keyword": "When "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.scenario({
-  "name": "login as a given user \"sales_manager90\"",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
 formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
+  "name": "the user should be able to login",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "user logs in the following credentials",
-  "rows": [
-    {},
-    {}
-  ],
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "name": "login as a given user \"store_manager101\"",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user logs in the following credentials",
-  "rows": [
-    {},
-    {}
-  ],
-  "keyword": "When "
+  "name": "the title contains \"Dashboard\"",
+  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
