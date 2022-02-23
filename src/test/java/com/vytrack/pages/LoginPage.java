@@ -12,17 +12,12 @@ public class LoginPage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(id = "prependedInput")
-    public WebElement usernameInput;
-
-    @FindBy(id = "prependedInput2")
-    public WebElement passwordInput;
+    public WebElement _username;
+    public WebElement _password;
+    public WebElement _submit;
 
     @FindBy(className = "custom-checkbox__text")
     public WebElement checkbox;
-
-    @FindBy(id = "_submit")
-    public WebElement loginButton;
 
     @FindBy(className = "oro-subtitle")
     public WebElement pageNameHeader;
@@ -34,27 +29,38 @@ public class LoginPage {
     public WebElement forgotPasswordLink;
 
     public void login(String username, String password) {
-        usernameInput.sendKeys(username);
-        passwordInput.sendKeys(password);
-        loginButton.click();
+        _username.sendKeys(username);
+        _password.sendKeys(password);
+        _submit.click();
+    }
+
+    public void loginAsDriver() {
+        login(ConfigurationReader.get("driver_username"),
+                ConfigurationReader.get("driver_password"));
+    }
+
+    public void loginAsSaleManager(){
+        login(ConfigurationReader.get("sales_manager_username"),
+                ConfigurationReader.get("sales_manager_password"));
+    }
+
+    public void loginAsStoreManager(){
+        login(ConfigurationReader.get("store_manager_username"),
+                ConfigurationReader.get("store_manager_password"));
     }
 
     public void loginAsUserType(String userType){
-        Driver.get().get(ConfigurationReader.get("url"));
-        String username = null;
-        String password = null;
-
         if (userType.equals("driver")){
-            username = ConfigurationReader.get("driver_username");
-            password = ConfigurationReader.get("driver_password");
-        }else if (userType.equals("sales_manager")){
-            username = ConfigurationReader.get("sales_manager_username");
-            password = ConfigurationReader.get("sales_manager_password");
-            //store_manager in equals method should be same as in example in feature  file
+            loginAsDriver();
         }else if (userType.equals("store_manager")){
-            username = ConfigurationReader.get("store_manager_username");
-            password = ConfigurationReader.get("store_manager_password");
+            loginAsStoreManager();
+        }else if (userType.equals("sales_manager")){
+            loginAsSaleManager();
+        }else {
+            System.out.println("no such user");
         }
     }
+
+
 
 }
