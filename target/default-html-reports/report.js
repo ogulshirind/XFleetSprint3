@@ -10,12 +10,12 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "login with invalid credentials",
+  "name": "password or username empty",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@invalid_user_credentials"
+      "name": "@password_or_username_empty"
     },
     {
       "name": "@wip"
@@ -31,7 +31,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "error message displays",
+  "name": "error message displays \"Please fill out this field.\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -47,26 +47,26 @@ formatter.examples({
     },
     {
       "cells": [
-        "invalid username",
+        "",
         "UserUser123"
       ]
     },
     {
       "cells": [
         "user1",
-        "invalid password"
+        ""
       ]
     },
     {
       "cells": [
-        "invalid username",
-        "invalid password"
+        "",
+        ""
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "login with invalid credentials",
+  "name": "password or username empty",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -74,7 +74,7 @@ formatter.scenario({
       "name": "@login"
     },
     {
-      "name": "@invalid_user_credentials"
+      "name": "@password_or_username_empty"
     },
     {
       "name": "@wip"
@@ -95,7 +95,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using \"invalid username\" and \"UserUser123\"",
+  "name": "the user logs in using \"\" and \"UserUser123\"",
   "keyword": "When "
 });
 formatter.match({
@@ -105,20 +105,22 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "error message displays",
+  "name": "error message displays \"Please fill out this field.\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:155)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "login with invalid credentials",
+  "name": "password or username empty",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -126,7 +128,7 @@ formatter.scenario({
       "name": "@login"
     },
     {
-      "name": "@invalid_user_credentials"
+      "name": "@password_or_username_empty"
     },
     {
       "name": "@wip"
@@ -147,7 +149,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using \"user1\" and \"invalid password\"",
+  "name": "the user logs in using \"user1\" and \"\"",
   "keyword": "When "
 });
 formatter.match({
@@ -157,20 +159,22 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "error message displays",
+  "name": "error message displays \"Please fill out this field.\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:158)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "login with invalid credentials",
+  "name": "password or username empty",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -178,7 +182,7 @@ formatter.scenario({
       "name": "@login"
     },
     {
-      "name": "@invalid_user_credentials"
+      "name": "@password_or_username_empty"
     },
     {
       "name": "@wip"
@@ -199,7 +203,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using \"invalid username\" and \"invalid password\"",
+  "name": "the user logs in using \"\" and \"\"",
   "keyword": "When "
 });
 formatter.match({
@@ -209,15 +213,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "error message displays",
+  "name": "error message displays \"Please fill out this field.\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:155)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded2.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

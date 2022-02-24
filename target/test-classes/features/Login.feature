@@ -24,7 +24,7 @@ Feature: user should be able to login
       | store manager | Dashboard       |
 
 
-  @invalid_user_credentials @wip
+  @invalid_user_credentials
   Scenario Outline: login with invalid credentials
     Given user is on the login page
     When the user logs in using "<username>" and "<password>"
@@ -34,4 +34,16 @@ Feature: user should be able to login
       | invalid username | UserUser123      |
       | user1            | invalid password |
       | invalid username | invalid password |
+
+
+  @password_or_username_empty @wip
+  Scenario Outline: password or username empty
+    Given user is on the login page
+    When the user logs in using "<username>" and "<password>"
+    Then error message displays "Please fill out this field."
+    Examples:
+      | username | password    |
+      |          | UserUser123 |
+      | user1    |             |
+      |          |             |
 

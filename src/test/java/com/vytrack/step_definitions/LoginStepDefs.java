@@ -146,6 +146,21 @@ public class LoginStepDefs {
 
 
 
+
+
+
+    @Then("error message displays {string}")
+    public void error_message_displays(String messageFillOut) {
+        if(loginPage.username.getAttribute("value").equals("")){
+            Assert.assertEquals(messageFillOut, loginPage.username.getAttribute("validation message"));
+            System.out.println("username text box is empty");
+        } else if (loginPage.password.getAttribute("value").equals("")){
+            Assert.assertEquals(messageFillOut, loginPage.password.getAttribute("validation message"));
+            System.out.println("password text box is empty");
+        }
+    }
+
+
 }
 
 
