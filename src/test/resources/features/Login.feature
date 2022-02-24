@@ -2,8 +2,7 @@
 Feature: user should be able to login
 
 
-
-
+  @login_with_valid_credentials
   Scenario: Verify that login with valid credentials
     Given user is on the login page
     And user checks checkbox
@@ -11,9 +10,7 @@ Feature: user should be able to login
     Then the title contains "Dashboard"
 
 
-
-
-  @wip
+  @login_as_a_user_type @verify_page_header
   Scenario Outline: login as a user
     Given user is on the login page
     And user checks checkbox
@@ -24,6 +21,6 @@ Feature: user should be able to login
     Examples:
       | userType      | pageHeader      |
       | driver        | Quick Launchpad |
-      | sales manager | Dashboard       |
+      | sales_manager | Quick Launchpad |
       | store manager | Dashboard       |
 

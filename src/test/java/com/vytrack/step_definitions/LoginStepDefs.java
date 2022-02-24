@@ -102,7 +102,8 @@ public class LoginStepDefs {
     @When("user logs in as {string}")
     public void user_logs_in_as(String userType) {
         loginPage.loginAsUserType(userType);
-        BrowserUtils.waitFor(2);
+        dashboardPage.waitUntilLoaderScreenDisappear();
+        //BrowserUtils.waitFor(2);
     }
 
 
@@ -115,6 +116,7 @@ public class LoginStepDefs {
     @When("user clicks logout button")
     public void user_clicks_logout_button() {
         dashboardPage.dropDownButton.click();
+        BrowserUtils.waitFor(2);
         dashboardPage.logoutButton.click();
     }
 
