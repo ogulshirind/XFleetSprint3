@@ -25,7 +25,7 @@ public class LoginPage {
     @FindBy(className = "custom-checkbox__icon")
     public WebElement checkbox;
 
-    @FindBy(className = "alert alert-error")
+    @FindBy(css = ".alert.alert-error>div")
     public WebElement messageForInvalidCredentials;
 
     @FindBy(linkText = "Forgot your password?")

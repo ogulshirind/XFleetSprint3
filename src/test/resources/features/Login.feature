@@ -17,10 +17,21 @@ Feature: user should be able to login
     When user logs in as "<userType>"
     Then the title contains "Dashboard"
     And page header is "<pageHeader>" in "<userType>"
-
     Examples:
       | userType      | pageHeader      |
       | driver        | Quick Launchpad |
       | sales_manager | Quick Launchpad |
       | store manager | Dashboard       |
+
+
+  @invalid_user_credentials @wip
+  Scenario Outline: login with invalid credentials
+    Given user is on the login page
+    When the user logs in using "<username>" and "<password>"
+    Then error message displays
+    Examples:
+      | username         | password         |
+      | invalid username | UserUser123      |
+      | user1            | invalid password |
+      | invalid username | invalid password |
 

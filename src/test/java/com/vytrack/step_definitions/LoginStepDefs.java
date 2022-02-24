@@ -133,8 +133,20 @@ public class LoginStepDefs {
     }
 
 
-}
 
+
+
+
+    //Then error message displays
+    @Then("error message displays")
+    public void error_message_displays() {
+        Assert.assertTrue("verify invalid credential message is displayed",
+                loginPage.messageForInvalidCredentials.isDisplayed());
+    }
+
+
+
+}
 
 
 

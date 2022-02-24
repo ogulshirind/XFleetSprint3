@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-24T11:00:05.347Z",
+        "start_timestamp": "2022-02-24T11:36:56.850Z",
         "before": [
           {
             "result": {
-              "duration": 4814105000,
+              "duration": 5046930000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Verify user is able to logout",
+        "line": 34,
+        "name": "login with invalid credentials",
         "description": "",
-        "id": "user-should-be-able-to-logout;verify-user-is-able-to-logout;;2",
+        "id": "user-should-be-able-to-login;login-with-invalid-credentials;;2",
         "after": [
           {
             "result": {
-              "duration": 208076000,
+              "duration": 130392000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3359449000,
+              "duration": 3774082000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 29,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -47,59 +47,57 @@
           },
           {
             "result": {
-              "duration": 4758728000,
+              "duration": 5170466000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user logs in as \"driver\"",
+            "line": 30,
+            "name": "the user logs in using \"invalid username\" and \"UserUser123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"driver\"",
-                  "offset": 16
+                  "val": "\"invalid username\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 46
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5533996000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks logout button",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 12611000,
+              "duration": 575892000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify user is on the login page",
+            "line": 31,
+            "name": "error message displays",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalid_user_credentials"
+          },
           {
             "name": "@wip"
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-24T11:00:24.222Z",
+        "start_timestamp": "2022-02-24T11:37:11.898Z",
         "before": [
           {
             "result": {
-              "duration": 2197722000,
+              "duration": 2322173000,
               "status": "passed"
             },
             "match": {
@@ -107,14 +105,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Verify user is able to logout",
+        "line": 35,
+        "name": "login with invalid credentials",
         "description": "",
-        "id": "user-should-be-able-to-logout;verify-user-is-able-to-logout;;3",
+        "id": "user-should-be-able-to-login;login-with-invalid-credentials;;3",
         "after": [
           {
             "result": {
-              "duration": 199984000,
+              "duration": 164756000,
               "status": "passed"
             },
             "match": {
@@ -127,10 +125,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3372048000,
+              "duration": 3186926000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 29,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -139,59 +137,57 @@
           },
           {
             "result": {
-              "duration": 8510848000,
+              "duration": 3320701000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user logs in as \"sales manager\"",
+            "line": 30,
+            "name": "the user logs in using \"user1\" and \"invalid password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sales manager\"",
-                  "offset": 16
+                  "val": "\"user1\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"invalid password\"",
+                  "offset": 35
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5403251000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks logout button",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 9165000,
+              "duration": 358082000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify user is on the login page",
+            "line": 31,
+            "name": "error message displays",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalid_user_credentials"
+          },
           {
             "name": "@wip"
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-24T11:00:44.065Z",
+        "start_timestamp": "2022-02-24T11:37:21.515Z",
         "before": [
           {
             "result": {
-              "duration": 2039142000,
+              "duration": 2246900000,
               "status": "passed"
             },
             "match": {
@@ -199,14 +195,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Verify user is able to logout",
+        "line": 36,
+        "name": "login with invalid credentials",
         "description": "",
-        "id": "user-should-be-able-to-logout;verify-user-is-able-to-logout;;4",
+        "id": "user-should-be-able-to-login;login-with-invalid-credentials;;4",
         "after": [
           {
             "result": {
-              "duration": 190053000,
+              "duration": 125245000,
               "status": "passed"
             },
             "match": {
@@ -219,10 +215,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3219414000,
+              "duration": 3224351000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 29,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -231,59 +227,66 @@
           },
           {
             "result": {
-              "duration": 8583493000,
+              "duration": 5168616000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user logs in as \"store manager\"",
+            "line": 30,
+            "name": "the user logs in using \"invalid username\" and \"invalid password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"store manager\"",
-                  "offset": 16
+                  "val": "\"invalid username\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"invalid password\"",
+                  "offset": 46
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5537266000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks logout button",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7449000,
+              "duration": 286054000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify user is on the login page",
+            "line": 31,
+            "name": "error message displays",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalid_user_credentials"
+          },
           {
             "name": "@wip"
           }
         ]
       }
     ],
-    "name": "user should be able to logout",
+    "name": "user should be able to login",
     "description": "",
-    "id": "user-should-be-able-to-logout",
+    "id": "user-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Logout.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
