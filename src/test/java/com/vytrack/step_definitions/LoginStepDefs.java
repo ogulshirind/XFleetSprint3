@@ -173,6 +173,17 @@ public class LoginStepDefs {
     }
 
 
+
+
+
+
+    //When user navigates back to home page by back arrow button
+    @When("user navigates back to home page by back arrow button")
+    public void user_navigates_back_to_home_page_by_back_arrow_button() {
+        Driver.get().navigate().back();
+    }
+
+
 }
 
 

@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-24T15:14:19.330Z",
+        "start_timestamp": "2022-02-24T15:37:11.099Z",
         "before": [
           {
             "result": {
-              "duration": 4510310000,
+              "duration": 5084080000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 54,
-        "name": "validate forgot your password link works and lands on respective page",
+        "line": 26,
+        "name": "user can not go to the home page again by clicking the step back button after logging out",
         "description": "",
-        "id": "user-should-be-able-to-login;validate-forgot-your-password-link-works-and-lands-on-respective-page",
+        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;2",
         "after": [
           {
             "result": {
-              "duration": 140695000,
+              "duration": 233696000,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3657340000,
+              "duration": 3843984000,
               "status": "passed"
             },
-            "line": 55,
+            "line": 19,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -47,41 +47,276 @@
           },
           {
             "result": {
-              "duration": 568747000,
+              "duration": 5929808000,
               "status": "passed"
             },
-            "line": 56,
-            "name": "user clicks forgot password link",
+            "line": 20,
+            "name": "user logs in as \"driver\"",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_forgot_password_link()"
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5517632000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks logout button",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 49423000,
+              "duration": 817926000,
               "status": "passed"
             },
-            "line": 57,
-            "name": "the title contains \"Forgot Password\"",
+            "line": 22,
+            "name": "user navigates back to home page by back arrow button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Forgot Password\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15736000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@back_button_takes_to_login_page_not_back_page"
           },
           {
-            "name": "@forgot_your_password_link_validation"
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T15:37:32.796Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2385826000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "user can not go to the home page again by clicking the step back button after logging out",
+        "description": "",
+        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 228306000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3308841000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7899506000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user logs in as \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5401250000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks logout button",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 818808000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user navigates back to home page by back arrow button",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14599000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@back_button_takes_to_login_page_not_back_page"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-24T15:37:53.358Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2317239000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "user can not go to the home page again by clicking the step back button after logging out",
+        "description": "",
+        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 220627000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3167059000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10614164000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user logs in as \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5439382000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks logout button",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820583000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user navigates back to home page by back arrow button",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9485000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@back_button_takes_to_login_page_not_back_page"
           },
           {
             "name": "@wip"
@@ -89,20 +324,11 @@
         ]
       }
     ],
-    "name": "user should be able to login",
+    "name": "user should be able to logout",
     "description": "",
-    "id": "user-should-be-able-to-login",
+    "id": "user-should-be-able-to-logout",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/Logout.feature",
+    "tags": []
   }
 ]
