@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public LoginPage(){
+    public LoginPage() {
         PageFactory.initElements(Driver.get(), this);
     }
 
@@ -36,18 +36,18 @@ public class LoginPage {
                 ConfigurationReader.get("driver_password"));
     }
 
-    public void loginAsSaleManager(){
+    public void loginAsSaleManager() {
         login(ConfigurationReader.get("sales_manager_username"),
                 ConfigurationReader.get("sales_manager_password"));
     }
 
-    public void loginAsStoreManager(){
+    public void loginAsStoreManager() {
         login(ConfigurationReader.get("store_manager_username"),
                 ConfigurationReader.get("store_manager_password"));
     }
 
-    public void loginAsUserType(String userType){
-        switch (userType){
+    public void loginAsUserType(String userType) {
+        switch (userType) {
             case "driver":
                 loginAsDriver();
                 break;
@@ -61,7 +61,6 @@ public class LoginPage {
                 System.out.println("no such user");
         }
     }
-
 
 
 }

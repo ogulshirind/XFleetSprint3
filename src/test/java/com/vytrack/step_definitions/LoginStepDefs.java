@@ -1,5 +1,6 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.pages.DashboardPage;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.utilities.BrowserUtils;
 import com.vytrack.utilities.ConfigurationReader;
@@ -85,7 +86,13 @@ public class LoginStepDefs {
 
     @Then("user sees full name")
     public void user_sees_full_name() {
+        /*
+        Assert.assertTrue("verify user profile name exists",
+                new DashboardPage().getProfileUserName()!=null);
+        */
 
+        Assert.assertNotNull("verify user profile name exists",
+                new DashboardPage().getProfileUserName());
     }
 
 

@@ -70,7 +70,7 @@ public class BasePage {
 
 
 
-    public String getUserName(){
+    public String getProfileUserName(){
         waitUntilLoaderScreenDisappear();
         BrowserUtils.waitForVisibility(userProfileName, 5);
         return userProfileName.getText();
