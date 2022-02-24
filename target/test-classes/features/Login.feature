@@ -36,7 +36,7 @@ Feature: user should be able to login
       | invalid username | invalid password |
 
 
-  @password_or_username_empty @wip
+  @password_or_username_empty
   Scenario Outline: password or username empty
     Given user is on the login page
     When the user logs in using "<username>" and "<password>"
@@ -47,3 +47,11 @@ Feature: user should be able to login
       | user1    |             |
       |          |             |
 
+
+
+
+    @forgot_your_password_link_validation @wip
+      Scenario: validate forgot your password link works and lands on respective page
+      Given user is on the login page
+      When user clicks forgot password link
+      Then the title contains "Forgot Password"

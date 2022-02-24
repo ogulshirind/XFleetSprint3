@@ -47,3 +47,11 @@ Feature: user should be able to login
       | user1    |             |
       |          |             |
 
+
+
+
+    @forgot_your_password_link_validation
+      Scenario: validate forgot your password link works and lands on respective page
+      Given user is on the login page
+      When user clicks forgot password link
+      Then the title contains "Forgot Password"

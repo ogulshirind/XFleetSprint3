@@ -161,6 +161,18 @@ public class LoginStepDefs {
     }
 
 
+
+
+
+
+
+    //When user clicks forgot password link
+    @When("user clicks forgot password link")
+    public void user_clicks_forgot_password_link() {
+        loginPage.forgotPasswordLink.click();
+    }
+
+
 }
 
 

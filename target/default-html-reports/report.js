@@ -9,72 +9,16 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "password or username empty",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@password_or_username_empty"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "the user logs in using \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "error message displays \"Please fill out this field.\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "UserUser123"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        ""
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "password or username empty",
+  "name": "validate forgot your password link works and lands on respective page",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@login"
     },
     {
-      "name": "@password_or_username_empty"
+      "name": "@forgot_your_password_link_validation"
     },
     {
       "name": "@wip"
@@ -95,135 +39,25 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using \"\" and \"UserUser123\"",
+  "name": "user clicks forgot password link",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_forgot_password_link()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "error message displays \"Please fill out this field.\"",
+  "name": "the title contains \"Forgot Password\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
-});
-formatter.result({
-  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:155)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png", "screenshot");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "password or username empty",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@password_or_username_empty"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "the user logs in using \"user1\" and \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "error message displays \"Please fill out this field.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
-});
-formatter.result({
-  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:158)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded1.png", "screenshot");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "password or username empty",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@password_or_username_empty"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user logs in using \"\" and \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "error message displays \"Please fill out this field.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.error_message_displays(java.lang.String)"
-});
-formatter.result({
-  "error_message": "java.lang.NullPointerException\n\tat com.vytrack.step_definitions.LoginStepDefs.error_message_displays(LoginStepDefs.java:155)\n\tat ✽.error message displays \"Please fill out this field.\"(file:///Users/olivetti/IdeaProjects/XFleetSprint3/src/test/resources/features/Login.feature:43)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded2.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
