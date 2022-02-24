@@ -17,6 +17,7 @@ import javax.swing.*;
 public class LoginStepDefs {
 
     LoginPage loginPage = new LoginPage();
+    DashboardPage dashboardPage = new DashboardPage();
 
 
     //Given user is on the login page
@@ -34,7 +35,7 @@ public class LoginStepDefs {
     //And user checks checkbox
     @When("user checks checkbox")
     public void user_checks_checkbox() {
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(10);
         loginPage.checkbox.click();
         BrowserUtils.waitFor(2);
     }
@@ -86,8 +87,7 @@ public class LoginStepDefs {
             case "store manager":
                 System.out.println("actualPageHeader = " + actualPageHeader);
                 System.out.println("expectedPageHeader = " + expectedPageHeader);
-                Assert.assertTrue("verify page header",
-                        actualPageHeader.equals(expectedPageHeader));
+                Assert.assertEquals(expectedPageHeader, actualPageHeader);
                 break;
             default:
                 System.out.println(actualPageHeader);
@@ -109,6 +109,29 @@ public class LoginStepDefs {
     }
 
 
+
+
+
+
+
+
+    @When("user clicks logout button")
+    public void user_clicks_logout_button() {
+        dashboardPage.dropDownButton.click();
+        dashboardPage.logoutButton.click();
+    }
+
+
+
+
+
+
+
+    @Then("verify user is on the login page")
+    public void verify_user_is_on_the_login_page() {
+        String actualPageTitle = Driver.get().getTitle();
+        Assert.assertEquals("Login", actualPageTitle);
+    }
 
 
 }

@@ -3,7 +3,7 @@ Feature: user should be able to login
 
 
 
-  @wip
+
   Scenario: Verify that login with valid credentials
     Given user is on the login page
     And user checks checkbox
@@ -16,8 +16,8 @@ Feature: user should be able to login
 
   Scenario Outline: login as a user
     Given user is on the login page
-    When user logs in as "<userType>"
     And user checks checkbox
+    When user logs in as "<userType>"
     Then the title contains "Dashboard"
     And page header is "<pageHeader>" in "<userType>"
 
