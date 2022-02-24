@@ -184,6 +184,17 @@ public class LoginStepDefs {
     }
 
 
+
+
+
+
+    //When user closes all tabs user logs out
+    @When("user closes all tabs")
+    public void user_closes_all_tabs() {
+        Driver.closeDriver();
+    }
+
+
 }
 
 

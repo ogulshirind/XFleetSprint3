@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-24T15:37:11.099Z",
+        "start_timestamp": "2022-02-24T15:59:55.162Z",
         "before": [
           {
             "result": {
-              "duration": 5084080000,
+              "duration": 4848688000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "user can not go to the home page again by clicking the step back button after logging out",
+        "line": 41,
+        "name": "user logs out after all tabs are closed",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;2",
+        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;2",
         "after": [
           {
             "result": {
-              "duration": 233696000,
+              "duration": 104496000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3843984000,
+              "duration": 4172935000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 34,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 5929808000,
+              "duration": 5823846000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 35,
             "name": "user logs in as \"driver\"",
             "match": {
               "arguments": [
@@ -65,34 +65,34 @@
           },
           {
             "result": {
-              "duration": 5517632000,
+              "duration": 198611000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user clicks logout button",
+            "line": 36,
+            "name": "user closes all tabs",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 817926000,
+              "duration": 5949976000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user navigates back to home page by back arrow button",
+            "line": 37,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15736000,
+              "duration": 15890000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 38,
             "name": "verify user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
@@ -102,7 +102,7 @@
         ],
         "tags": [
           {
-            "name": "@back_button_takes_to_login_page_not_back_page"
+            "name": "@user_logs_out_after_browser_closes"
           },
           {
             "name": "@wip"
@@ -110,11 +110,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-24T15:37:32.796Z",
+        "start_timestamp": "2022-02-24T16:00:16.540Z",
         "before": [
           {
             "result": {
-              "duration": 2385826000,
+              "duration": 1940879000,
               "status": "passed"
             },
             "match": {
@@ -122,14 +122,14 @@
             }
           }
         ],
-        "line": 27,
-        "name": "user can not go to the home page again by clicking the step back button after logging out",
+        "line": 42,
+        "name": "user logs out after all tabs are closed",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;3",
+        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;3",
         "after": [
           {
             "result": {
-              "duration": 228306000,
+              "duration": 112766000,
               "status": "passed"
             },
             "match": {
@@ -142,10 +142,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3308841000,
+              "duration": 3363820000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 34,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -154,10 +154,10 @@
           },
           {
             "result": {
-              "duration": 7899506000,
+              "duration": 9479007000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 35,
             "name": "user logs in as \"sales manager\"",
             "match": {
               "arguments": [
@@ -172,34 +172,34 @@
           },
           {
             "result": {
-              "duration": 5401250000,
+              "duration": 195012000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user clicks logout button",
+            "line": 36,
+            "name": "user closes all tabs",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 818808000,
+              "duration": 5843627000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user navigates back to home page by back arrow button",
+            "line": 37,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 14599000,
+              "duration": 9359000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 38,
             "name": "verify user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
@@ -209,7 +209,7 @@
         ],
         "tags": [
           {
-            "name": "@back_button_takes_to_login_page_not_back_page"
+            "name": "@user_logs_out_after_browser_closes"
           },
           {
             "name": "@wip"
@@ -217,11 +217,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-24T15:37:53.358Z",
+        "start_timestamp": "2022-02-24T16:00:37.621Z",
         "before": [
           {
             "result": {
-              "duration": 2317239000,
+              "duration": 1844673000,
               "status": "passed"
             },
             "match": {
@@ -229,14 +229,14 @@
             }
           }
         ],
-        "line": 28,
-        "name": "user can not go to the home page again by clicking the step back button after logging out",
+        "line": 43,
+        "name": "user logs out after all tabs are closed",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-can-not-go-to-the-home-page-again-by-clicking-the-step-back-button-after-logging-out;;4",
+        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;4",
         "after": [
           {
             "result": {
-              "duration": 220627000,
+              "duration": 111273000,
               "status": "passed"
             },
             "match": {
@@ -249,10 +249,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3167059000,
+              "duration": 3429501000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 34,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -261,10 +261,10 @@
           },
           {
             "result": {
-              "duration": 10614164000,
+              "duration": 9300561000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 35,
             "name": "user logs in as \"store manager\"",
             "match": {
               "arguments": [
@@ -279,34 +279,34 @@
           },
           {
             "result": {
-              "duration": 5439382000,
+              "duration": 199851000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user clicks logout button",
+            "line": 36,
+            "name": "user closes all tabs",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 820583000,
+              "duration": 5952291000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user navigates back to home page by back arrow button",
+            "line": 37,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9485000,
+              "duration": 8230000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 38,
             "name": "verify user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
@@ -316,7 +316,7 @@
         ],
         "tags": [
           {
-            "name": "@back_button_takes_to_login_page_not_back_page"
+            "name": "@user_logs_out_after_browser_closes"
           },
           {
             "name": "@wip"

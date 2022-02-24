@@ -5,12 +5,12 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "user can not go to the home page again by clicking the step back button after logging out",
+  "name": "user logs out after all tabs are closed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@back_button_takes_to_login_page_not_back_page"
+      "name": "@user_logs_out_after_browser_closes"
     },
     {
       "name": "@wip"
@@ -26,12 +26,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "user clicks logout button",
+  "name": "user closes all tabs",
   "keyword": "When "
 });
 formatter.step({
-  "name": "user navigates back to home page by back arrow button",
-  "keyword": "And "
+  "name": "user is on the login page",
+  "keyword": "Given "
 });
 formatter.step({
   "name": "verify user is on the login page",
@@ -65,12 +65,12 @@ formatter.examples({
   ]
 });
 formatter.scenario({
-  "name": "user can not go to the home page again by clicking the step back button after logging out",
+  "name": "user logs out after all tabs are closed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@back_button_takes_to_login_page_not_back_page"
+      "name": "@user_logs_out_after_browser_closes"
     },
     {
       "name": "@wip"
@@ -101,21 +101,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks logout button",
+  "name": "user closes all tabs",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user navigates back to home page by back arrow button",
-  "keyword": "And "
+  "name": "user is on the login page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
 });
 formatter.result({
   "status": "passed"
@@ -134,12 +134,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "user can not go to the home page again by clicking the step back button after logging out",
+  "name": "user logs out after all tabs are closed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@back_button_takes_to_login_page_not_back_page"
+      "name": "@user_logs_out_after_browser_closes"
     },
     {
       "name": "@wip"
@@ -170,21 +170,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks logout button",
+  "name": "user closes all tabs",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user navigates back to home page by back arrow button",
-  "keyword": "And "
+  "name": "user is on the login page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
 });
 formatter.result({
   "status": "passed"
@@ -203,12 +203,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "user can not go to the home page again by clicking the step back button after logging out",
+  "name": "user logs out after all tabs are closed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@back_button_takes_to_login_page_not_back_page"
+      "name": "@user_logs_out_after_browser_closes"
     },
     {
       "name": "@wip"
@@ -239,21 +239,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks logout button",
+  "name": "user closes all tabs",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_clicks_logout_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user navigates back to home page by back arrow button",
-  "keyword": "And "
+  "name": "user is on the login page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_navigates_back_to_home_page_by_back_arrow_button()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
 });
 formatter.result({
   "status": "passed"
