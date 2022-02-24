@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
 
     @FindBy(css = "h1[class='oro-subtitle']")
-    public WebElement pageNameHeader;
+    public WebElement pageHeader;
 
     @FindBy(css = "div[class='loader-mask shown']")
     @CacheLookup
@@ -63,7 +63,7 @@ public class BasePage {
         //ant time we are verifying page name, or page subtitle, loader mask appears
         waitUntilLoaderScreenDisappear();
 //        BrowserUtils.waitForStaleElement(pageSubTitle);
-        return pageNameHeader.getText();
+        return pageHeader.getText();
     }
 
 

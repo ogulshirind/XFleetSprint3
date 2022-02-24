@@ -25,9 +25,15 @@ public class LoginPage {
     @FindBy(linkText = "Forgot your password?")
     public WebElement forgotPasswordLink;
 
-    public void login(String username, String password) {
-        _username.sendKeys(username);
-        _password.sendKeys(password);
+    @FindBy(css = "h1[class='oro-subtitle']")
+    public WebElement pageHeader;
+
+
+
+
+    public void login(String usernameText, String passwordText) {
+        _username.sendKeys(usernameText);
+        _password.sendKeys(passwordText);
         _submit.click();
     }
 
@@ -36,7 +42,7 @@ public class LoginPage {
                 ConfigurationReader.get("driver_password"));
     }
 
-    public void loginAsSaleManager() {
+    public void loginAsSalesManager() {
         login(ConfigurationReader.get("sales_manager_username"),
                 ConfigurationReader.get("sales_manager_password"));
     }
@@ -51,11 +57,11 @@ public class LoginPage {
             case "driver":
                 loginAsDriver();
                 break;
-            case "store_manager":
+            case "store manager":
                 loginAsStoreManager();
                 break;
-            case "sales_manager":
-                loginAsSaleManager();
+            case "sales manager":
+                loginAsSalesManager();
                 break;
             default:
                 System.out.println("no such user");

@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "after logging in user sees full name",
+  "name": "Verify that login with valid credentials",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -30,24 +30,36 @@ formatter.match({
   "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user logs in as \"driver\"",
+  "name": "user checks checkbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.user_checks_checkbox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logs in using \"user1\" and \"UserUser123\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user sees full name",
+  "name": "the title contains \"Dashboard\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 });

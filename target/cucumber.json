@@ -3,20 +3,20 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-23T15:52:48.779Z",
-        "line": 67,
-        "name": "after logging in user sees full name",
+        "start_timestamp": "2022-02-24T05:09:28.050Z",
+        "line": 7,
+        "name": "Verify that login with valid credentials",
         "description": "",
-        "id": "user-should-be-able-to-login;after-logging-in-user-sees-full-name",
+        "id": "user-should-be-able-to-login;verify-that-login-with-valid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2966000,
-              "status": "skipped"
+              "duration": 9010362000,
+              "status": "passed"
             },
-            "line": 68,
+            "line": 8,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -25,29 +25,54 @@
           },
           {
             "result": {
-              "duration": 1912000,
-              "status": "skipped"
+              "duration": 4116634000,
+              "status": "passed"
             },
-            "line": 69,
-            "name": "user logs in as \"driver\"",
+            "line": 9,
+            "name": "user checks checkbox",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_checks_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5607435000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user logs in using \"user1\" and \"UserUser123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"driver\"",
-                  "offset": 16
+                  "val": "\"user1\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 35
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 164060000,
+              "status": "passed"
             },
-            "line": 70,
-            "name": "user sees full name",
-            "match": {},
+            "line": 11,
+            "name": "the title contains \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],
