@@ -12,11 +12,16 @@ public class LoginPage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    public WebElement _username;
-    public WebElement _password;
-    public WebElement _submit;
+    @FindBy(name = "_username")
+    public WebElement username;
 
-    @FindBy(className = "custom-checkbox__text")
+    @FindBy(name = "_password")
+    public WebElement password;
+
+    @FindBy(name = "_submit")
+    public WebElement loginButton;
+
+    @FindBy(className = "custom-checkbox__icon")
     public WebElement checkbox;
 
     @FindBy(className = "alert alert-error")
@@ -32,9 +37,9 @@ public class LoginPage {
 
 
     public void login(String usernameText, String passwordText) {
-        _username.sendKeys(usernameText);
-        _password.sendKeys(passwordText);
-        _submit.click();
+        username.sendKeys(usernameText);
+        password.sendKeys(passwordText);
+        loginButton.click();
     }
 
     public void loginAsDriver() {

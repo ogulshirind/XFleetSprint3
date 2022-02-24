@@ -1,4 +1,4 @@
-package com.vytrack.runners;
+package com.vytrack.step_definitions;
 
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.Scenario;
@@ -14,7 +14,7 @@ public class Hooks {
 
 
     @Before
-    public void setup(){
+    public void setUp(){
         Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }

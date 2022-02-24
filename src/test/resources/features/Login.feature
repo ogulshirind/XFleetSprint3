@@ -13,7 +13,7 @@ Feature: user should be able to login
 
 
 
-
+  @wip
   Scenario Outline: login as a user
     Given user is on the login page
     And user checks checkbox

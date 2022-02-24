@@ -10,9 +10,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-
-import javax.swing.*;
 
 public class LoginStepDefs {
 
@@ -35,7 +32,7 @@ public class LoginStepDefs {
     //And user checks checkbox
     @When("user checks checkbox")
     public void user_checks_checkbox() {
-        BrowserUtils.waitFor(10);
+        BrowserUtils.waitFor(1);
         loginPage.checkbox.click();
         BrowserUtils.waitFor(2);
     }
@@ -49,8 +46,8 @@ public class LoginStepDefs {
 
     @When("the user logs in using {string} and {string}")
     public void the_user_logs_in_using_and(String username, String password) {
-        loginPage._username.sendKeys(username);
-        loginPage._password.sendKeys(password + Keys.ENTER);
+        loginPage.username.sendKeys(username);
+        loginPage.password.sendKeys(password + Keys.ENTER);
         BrowserUtils.waitFor(2);
     }
 
