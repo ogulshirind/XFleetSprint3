@@ -19,9 +19,6 @@ public class LoginPage {
     @FindBy(className = "custom-checkbox__text")
     public WebElement checkbox;
 
-    @FindBy(className = "oro-subtitle")
-    public WebElement pageNameHeader;
-
     @FindBy(className = "alert alert-error")
     public WebElement messageForInvalidCredentials;
 
@@ -50,14 +47,18 @@ public class LoginPage {
     }
 
     public void loginAsUserType(String userType){
-        if (userType.equals("driver")){
-            loginAsDriver();
-        }else if (userType.equals("store_manager")){
-            loginAsStoreManager();
-        }else if (userType.equals("sales_manager")){
-            loginAsSaleManager();
-        }else {
-            System.out.println("no such user");
+        switch (userType){
+            case "driver":
+                loginAsDriver();
+                break;
+            case "store_manager":
+                loginAsStoreManager();
+                break;
+            case "sales_manager":
+                loginAsSaleManager();
+                break;
+            default:
+                System.out.println("no such user");
         }
     }
 
