@@ -20,7 +20,7 @@ Feature: user should be able to login
     Examples:
       | userType      | pageHeader      |
       | driver        | Quick Launchpad |
-      | sales_manager | Quick Launchpad |
+      | sales manager | Quick Launchpad |
       | store manager | Dashboard       |
 
 
@@ -48,10 +48,20 @@ Feature: user should be able to login
       |          |             |
 
 
+  @forgot_your_password_link_validation
+  Scenario: validate forgot your password link works and lands on respective page
+    Given user is on the login page
+    When user clicks forgot password link
+    Then the title contains "Forgot Password"
 
 
-    @forgot_your_password_link_validation
-      Scenario: validate forgot your password link works and lands on respective page
-      Given user is on the login page
-      When user clicks forgot password link
-      Then the title contains "Forgot Password"
+  @verify_input_password_is_masked @wip
+  Scenario Outline: verify input password is masked
+    Given user is on the login page
+    When user inputs "<username>" and "<password>"
+    Then "<password>" is masked
+    Examples:
+      | username        | password    |
+      | user1           | UserUser123 |
+      | salesmanager101 | UserUser123 |
+      | storemanager90  | UserUser123 |

@@ -29,7 +29,7 @@ Feature: user should be able to logout
 
 
 
-    @user_logs_out_after_browser_closes @wip
+    @user_logs_out_after_browser_closes
     Scenario Outline: user logs out after all tabs are closed
       Given user is on the login page
       And user logs in as "<userType>"

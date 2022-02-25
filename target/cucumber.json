@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-24T15:59:55.162Z",
+        "start_timestamp": "2022-02-25T16:03:13.063Z",
         "before": [
           {
             "result": {
-              "duration": 4848688000,
+              "duration": 5090721000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 41,
-        "name": "user logs out after all tabs are closed",
+        "line": 65,
+        "name": "verify input password is masked",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;2",
+        "id": "user-should-be-able-to-login;verify-input-password-is-masked;;2",
         "after": [
           {
             "result": {
-              "duration": 104496000,
+              "duration": 153494000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4172935000,
+              "duration": 4349448000,
               "status": "passed"
             },
-            "line": 34,
+            "line": 60,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -47,62 +47,51 @@
           },
           {
             "result": {
-              "duration": 5823846000,
+              "duration": 255987000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user logs in as \"driver\"",
+            "line": 61,
+            "name": "user inputs \"user1\" and \"UserUser123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"driver\"",
-                  "offset": 16
+                  "val": "\"user1\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 24
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 198611000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user closes all tabs",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_inputs_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5949976000,
+              "duration": 52743000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "user is on the login page",
+            "line": 62,
+            "name": "\"UserUser123\" is masked",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 15890000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "verify user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.is_masked(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@user_logs_out_after_browser_closes"
+            "name": "@login"
+          },
+          {
+            "name": "@verify_input_password_is_masked"
           },
           {
             "name": "@wip"
@@ -110,11 +99,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-24T16:00:16.540Z",
+        "start_timestamp": "2022-02-25T16:03:23.246Z",
         "before": [
           {
             "result": {
-              "duration": 1940879000,
+              "duration": 2300648000,
               "status": "passed"
             },
             "match": {
@@ -122,14 +111,14 @@
             }
           }
         ],
-        "line": 42,
-        "name": "user logs out after all tabs are closed",
+        "line": 66,
+        "name": "verify input password is masked",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;3",
+        "id": "user-should-be-able-to-login;verify-input-password-is-masked;;3",
         "after": [
           {
             "result": {
-              "duration": 112766000,
+              "duration": 160049000,
               "status": "passed"
             },
             "match": {
@@ -142,10 +131,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3363820000,
+              "duration": 3261777000,
               "status": "passed"
             },
-            "line": 34,
+            "line": 60,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -154,62 +143,51 @@
           },
           {
             "result": {
-              "duration": 9479007000,
+              "duration": 242300000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user logs in as \"sales manager\"",
+            "line": 61,
+            "name": "user inputs \"salesmanager101\" and \"UserUser123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sales manager\"",
-                  "offset": 16
+                  "val": "\"salesmanager101\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 34
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 195012000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user closes all tabs",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_inputs_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5843627000,
+              "duration": 47020000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "user is on the login page",
+            "line": 62,
+            "name": "\"UserUser123\" is masked",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9359000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "verify user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.is_masked(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@user_logs_out_after_browser_closes"
+            "name": "@login"
+          },
+          {
+            "name": "@verify_input_password_is_masked"
           },
           {
             "name": "@wip"
@@ -217,11 +195,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-24T16:00:37.621Z",
+        "start_timestamp": "2022-02-25T16:03:29.366Z",
         "before": [
           {
             "result": {
-              "duration": 1844673000,
+              "duration": 1939685000,
               "status": "passed"
             },
             "match": {
@@ -229,14 +207,14 @@
             }
           }
         ],
-        "line": 43,
-        "name": "user logs out after all tabs are closed",
+        "line": 67,
+        "name": "verify input password is masked",
         "description": "",
-        "id": "user-should-be-able-to-logout;user-logs-out-after-all-tabs-are-closed;;4",
+        "id": "user-should-be-able-to-login;verify-input-password-is-masked;;4",
         "after": [
           {
             "result": {
-              "duration": 111273000,
+              "duration": 130512000,
               "status": "passed"
             },
             "match": {
@@ -249,10 +227,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3429501000,
+              "duration": 3567820000,
               "status": "passed"
             },
-            "line": 34,
+            "line": 60,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
@@ -261,62 +239,51 @@
           },
           {
             "result": {
-              "duration": 9300561000,
+              "duration": 269756000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user logs in as \"store manager\"",
+            "line": 61,
+            "name": "user inputs \"storemanager90\" and \"UserUser123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"store manager\"",
-                  "offset": 16
+                  "val": "\"storemanager90\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 33
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 199851000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user closes all tabs",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.user_closes_all_tabs()"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.user_inputs_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5952291000,
+              "duration": 46429000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "user is on the login page",
+            "line": 62,
+            "name": "\"UserUser123\" is masked",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.userIsOnTheLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8230000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "verify user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.verify_user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.is_masked(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@user_logs_out_after_browser_closes"
+            "name": "@login"
+          },
+          {
+            "name": "@verify_input_password_is_masked"
           },
           {
             "name": "@wip"
@@ -324,11 +291,20 @@
         ]
       }
     ],
-    "name": "user should be able to logout",
+    "name": "user should be able to login",
     "description": "",
-    "id": "user-should-be-able-to-logout",
+    "id": "user-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Logout.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

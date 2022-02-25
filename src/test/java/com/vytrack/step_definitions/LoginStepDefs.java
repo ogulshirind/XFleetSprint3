@@ -195,6 +195,31 @@ public class LoginStepDefs {
     }
 
 
+
+
+
+
+
+    //When user inputs "<username>" and "<password>"
+    @When("user inputs {string} and {string}")
+    public void user_inputs_and(String username, String password) {
+        loginPage.username.sendKeys(username);
+        loginPage.password.sendKeys(password);
+    }
+
+
+
+
+
+
+
+    //Then "<password>" is masked
+    @Then("{string} is masked")
+    public void is_masked(String maskedPassword) {
+        Assert.assertTrue(loginPage.password.getAttribute("type").equals("password"));
+    }
+
+
 }
 
 
